@@ -1,0 +1,4 @@
+numpy
+rebound
+reboundx
+jsonschema
