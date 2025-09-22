@@ -1,0 +1,4 @@
+ &control
+ algor=hybrid, tstart=0.d0, tstop=1.0d6*365.25d0,
+ dt=0.5d0, dtout=1.0d3*365.25d0, eps=1.d-12, rclose=auto, irel=1,
+ aeiout=.true.,  ierr=0 /
