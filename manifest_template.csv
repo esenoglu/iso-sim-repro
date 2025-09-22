@@ -1,0 +1,1 @@
+run_id,seed_sim,t0_JD_TDB,ephemeris,engine,integrator,dt_days,rtol,rclose_rule,ejection_au,t_end_years,GR_1PN,PR_beta,Yarkovsky_A2_au_d2,C_YORP,vinf_type,vinf_mu_kms,vinf_sigma_kms,vinf_min_kms,N_objects,injection_radius_au,captured,ejected,N_total
