@@ -1,0 +1,18 @@
+{
+  "run_id": "iso_run_XXXX",
+  "seed_sim": 42,
+  "epoch_t0_jd_tdb": 2458849.5,
+  "ephemeris": "DE441",
+  "engine": "REBOUND",
+  "integrator": "IAS15",
+  "dt_days": 0.5,
+  "rtol": 1e-12,
+  "t_end_years": 1000000,
+  "rclose_rule": "min(3*R_H, 0.01 au)",
+  "ejection_distance_au": 1000.0,
+  "capture_rule": "e<1 & a<1000 au @ t_end",
+  "physics": { "GR_1PN": true, "PR_beta": 0.0, "Yarkovsky_A2_au_d2": 0.0, "C_YORP": 0.0 },
+  "vinf_distribution": { "type":"normal", "mu_kms": 26.0, "sigma_kms": 10.0, "min_kms": 3.0 },
+  "N_objects": 10000,
+  "injection_radius_au": 1000.0
+}
