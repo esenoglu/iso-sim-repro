@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ISO N-body Run Parameters",
+  "type": "object",
+  "properties": {
+    "run_id": {"type":"string"},
+    "seed_sim": {"type":"integer"},
+    "epoch_t0_jd_tdb": {"type":"number"},
+    "ephemeris": {"type":"string", "enum": ["DE441","DE440","Other"]},
+    "engine": {"type":"string", "enum": ["MERCURY6","REBOUND"]},
+    "integrator": {"type":"string"},
+    "dt_days": {"type":"number"},
+    "rtol": {"type":"number"},
+    "t_end_years": {"type":"number"},
+    "rclose_rule": {"type":"string"},
+    "ejection_distance_au": {"type":"number"},
+    "capture_rule": {"type":"string"},
+    "physics": {
+      "type":"object",
+      "properties": {
+        "GR_1PN": {"type":"boolean"},
+        "PR_beta": {"type":"number"},
+        "Yarkovsky_A2_au_d2": {"type":"number"},
+        "C_YORP": {"type":"number"}
+      },
+      "required": ["GR_1PN","PR_beta","Yarkovsky_A2_au_d2","C_YORP"]
+    },
+    "vinf_distribution": {
+      "type":"object",
+      "properties":{
+        "type":{"type":"string","enum":["normal","fixed"]},
+        "mu_kms":{"type":"number"},
+        "sigma_kms":{"type":"number"},
+        "min_kms":{"type":"number"}
+      },
+      "required":["type"]
+    },
+    "N_objects": {"type":"integer"},
+    "injection_radius_au": {"type":"number"}
+  },
+  "required": [
+    "run_id","seed_sim","epoch_t0_jd_tdb","ephemeris","engine","integrator",
+    "dt_days","t_end_years","rclose_rule","ejection_distance_au","capture_rule",
+    "physics","vinf_distribution","N_objects","injection_radius_au"
+  ]
+}
