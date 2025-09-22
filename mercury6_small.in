@@ -1,0 +1,3 @@
+# Placeholder small bodies (ISOs). One per line; insert injected state vectors.
+# name    m(kg)  x y z  vx vy vz
+ISO_0001  0      ...
