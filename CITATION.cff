@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this package, please cite it as below."
+title: "ISO Simulation Reproducibility Pack"
+authors:
+  - family-names: "YourSurname"
+    given-names: "YourName"
+version: "v1.0.0"
+date-released: "2025-09-22"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.xxxxxxx"  # replace after minting
+license: "MIT"
